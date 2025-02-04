@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YUKTI 2025 - Registration</title>
+    <link rel="shortcut icon" href="/assets/fav.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/styles.css">
+
+</head>
+<body>
+    <header class="header">
+        <img src="/assets/acc-logo.svg" alt="Amity Coding Club Logo" class="logo">
+        <img src="/assets/amity logo.svg" alt="Amity University Logo" class="logo">
+    </header>
+
+    <div class="container">
+        <h1>YUKTI 2025 Registration</h1>
+        
+        <form action="https://script.google.com/macros/s/AKfycbyRSU647OpzACXvi0s8hF6M-BvzsKQPrjjPTMW93VIxV2GvF7JsPMoMWpmIYaGfzzwxjQ/exec" method="POST" id="registrationForm">
+            <div class="form-group">
+                <label for="teamSize">Team Size</label>
+                <select id="teamSize" name="teamSize" required>
+                    <option value="">Select team size</option>
+                    <option value="1">1 Member</option>
+                    <option value="2">2 Members</option>
+                    <option value="3">3 Members</option>
+                    <option value="4">4 Members</option>
+                </select>
+            </div>
+
+            <div class="team-name-group">
+                <div class="form-group">
+                    <label for="teamName">Team Name</label>
+                    <input type="text" id="teamName" name="teamName" required>
+                </div>
+            </div>
+
+            <div id="teamMembersContainer"></div>
+
+            <button type="submit">Register Team</button>
+        </form>
+
+        <div class="event-details">
+            <p><strong>Date:</strong> 24 & 25 Feb 2025</p>
+            <p><strong>Time:</strong> 09:15-05:00</p>
+            <p><strong>Venue:</strong> Lecture Theaters, E-BLOCK</p>
+            
+        </div>
+    </div>
+
+    <div class="loader"></div>
+    <div class="overlay"></div>
+
+    <script src="/script.js">
+        
+    </script>
+</body>
+</html>
